@@ -1,0 +1,7 @@
+{
+  "target": "https://dev-open-api.x-metash.cn/gateway/forward/",
+  "server": {
+    "host": "localhost",
+    "port": "25475"
+  }
+}

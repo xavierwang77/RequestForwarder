@@ -1,0 +1,12 @@
+.idea
+.vscode
+logs
+
+*.log
+
+ranking-data
+raffle-data
+
+.keys
+
+.DS_Store
