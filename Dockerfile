@@ -20,7 +20,7 @@ RUN go mod download
 COPY . .
 
 # 获取依赖并编译可执行文件，注入版本号
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo \
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo \
     -o main .
 
 # 第二阶段：运行阶段

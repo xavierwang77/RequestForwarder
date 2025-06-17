@@ -18,7 +18,7 @@ func InitRoutes(r *gin.Engine) {
 		logger.Fatal("target is required")
 	}
 
-	r.Any("/", handler.ReverseProxyHandler(target))
+	r.Any("/*path", handler.ReverseProxyHandler(target))
 
 	log.MiniLogger.Info("[ OK ] router initialized", zap.String("target", target))
 }
